@@ -4,7 +4,8 @@
   "homepage": "https://emilmoe.com",
   "license": "MIT",
   "keywords": [
-    "Runtime extension"
+    "runtime",
+    "extension"
   ],
   "support": {
     "issues": "https://github.com/EmilMoe/Extendable/issues",
