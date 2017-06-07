@@ -11,8 +11,8 @@ trait CanBeExtended
      */
     public function __call($method, $parameters = [])
     {
-        if (Package::hasExtension(get_called_class(), $method))
-            return Package::getExtension(get_called_class(), $method, array_merge([$this], $parameters));
+        if (Extendable::hasExtension(get_called_class(), $method))
+            return Extendable::getExtension(get_called_class(), $method, array_merge([$this], $parameters));
 
         return parent::__call($method, $parameters);
     }
@@ -24,8 +24,8 @@ trait CanBeExtended
      */
     public static function __callStatic($method, $parameters = [])
     {
-        if (Package::hasExtension(get_called_class(), $method))
-            return Package::getExtension(get_called_class(), $method, $parameters);
+        if (Extendable::hasExtension(get_called_class(), $method))
+            return Extendable::getExtension(get_called_class(), $method, $parameters);
 
         return parent::__callStatic($method, $parameters);
     }
