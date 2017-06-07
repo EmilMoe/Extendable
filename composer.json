@@ -1,5 +1,5 @@
 {
-  "name": "EmilMoe/Extendable",
+  "name": "emilmoe/extendable",
   "description": "Allowing methods classes to be extended with static and non-static methods. Also supporting classes with already magic methods.",
   "homepage": "https://emilmoe.com",
   "license": "MIT",
