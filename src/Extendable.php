@@ -5,14 +5,14 @@ namespace EmilMoe\Extendable;
 class Extendable
 {
     /**
-     * @var Package
+     * @var Extendable
      */
     private static $instance;
 
     private $extends;
 
     /**
-     * @return Package
+     * @return Extendable
      */
     public static function getInstance()
     {
