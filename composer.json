@@ -7,8 +7,8 @@
     "Runtime extension"
   ],
   "support": {
-    "issues": "https://github.com/emilmoe/extendable/issues",
-    "source": "https://github.com/emilmoe/extendable"
+    "issues": "https://github.com/EmilMoe/Extendable/issues",
+    "source": "https://github.com/EmilMoe/Extendable"
   },
   "authors": [
     {
@@ -42,7 +42,5 @@
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
