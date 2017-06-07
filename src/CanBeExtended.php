@@ -13,7 +13,7 @@ trait CanBeExtended
     {
         if (Extendable::hasExtension(get_called_class(), $method))
             return Extendable::getExtension(get_called_class(), $method, array_merge([$this], $parameters));
-
+ 
         return parent::__call($method, $parameters);
     }
 
