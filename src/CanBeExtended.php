@@ -5,6 +5,19 @@ namespace EmilMoe\Extendable;
 trait CanBeExtended
 {
     /**
+     * @param string $property
+     * @return mixed
+     */
+    public function __get($property)
+    {
+        if (Extendable::hasExtension(get_called_class(), $property)) {
+            return Extendable::getExtension(get_called_class(), $property, [$this]);
+        }
+
+        return parent::__get($name);
+    }
+    
+    /**
      * @param $method
      * @param array $parameters
      * @return mixed
