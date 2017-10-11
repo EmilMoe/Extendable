@@ -14,7 +14,7 @@ trait CanBeExtended
             return Extendable::getExtension(get_called_class(), $property, [$this]);
         }
 
-        return parent::__get($name);
+        return parent::__get($property);
     }
     
     /**
